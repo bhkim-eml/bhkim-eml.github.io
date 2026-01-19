@@ -140,3 +140,62 @@ footer{
   padding:18px 0;
   font-size:13px;
 }
+.people-grid{
+  display:grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap:14px;
+  padding: 14px 0 60px;
+}
+
+.person-card{
+  grid-column: span 12;
+  display:flex;
+  gap:14px;
+  align-items:center;
+  padding:14px;
+  border-radius:18px;
+  border:1px solid var(--border);
+  background: rgba(18,26,39,.72);
+  text-decoration:none;
+  color: var(--text);
+  transition: .18s ease;
+}
+
+.person-card:hover{
+  transform: translateY(-2px);
+  border-color: rgba(90,167,255,.35);
+  box-shadow: 0 18px 60px rgba(0,0,0,.35);
+}
+
+.person-photo{
+  width:72px;
+  height:72px;
+  border-radius:18px;
+  object-fit: cover;
+  border:1px solid rgba(255,255,255,.10);
+}
+
+.person-meta{
+  display:flex;
+  flex-direction:column;
+  gap:4px;
+}
+
+.person-name{
+  font-weight:700;
+}
+
+.person-role{
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.person-tags{
+  color: var(--muted);
+  font-size: 13px;
+}
+
+@media (min-width: 900px){
+  .person-card{ grid-column: span 6; }
+}
+
