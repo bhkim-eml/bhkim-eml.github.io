@@ -26,34 +26,42 @@
   </header>
 
   <main class="container">
-    <section class="hero">
-      <h1 class="h-title">People</h1>
-      <p class="h-sub">멤버 구성(PI / Graduate Students / Alumni)을 카드 형태로 정리하세요. 사진은 나중에 assets/images에 넣고 연결하면 됩니다.</p>
-    </section>
+   <section class="hero">
+  <h1 class="h-title">People</h1>
+  <p class="h-sub">멤버를 클릭하면 세부 페이지로 이동합니다.</p>
+</section>
 
-    <section class="grid">
-      <div class="card span-12">
-        <h2>Principal Investigator</h2>
-        <p><strong>Prof. Name</strong> — Cathode materials, interfacial chemistry, operando characterization.</p>
-      </div>
+<section class="people-grid">
+  <!-- PI -->
+  <a class="person-card" href="people/pi.html">
+    <img class="person-photo" src="assets/images/people/pi.jpg" alt="PI photo">
+    <div class="person-meta">
+      <div class="person-name">Prof. Name</div>
+      <div class="person-role">Principal Investigator</div>
+      <div class="person-tags">Cathode materials · Operando XAS · High-voltage stability</div>
+    </div>
+  </a>
 
-      <div class="card span-6">
-        <h2>Graduate Students</h2>
-        <p>
-          - Name (Ph.D.) — Ni-rich layered oxides, high-voltage stability<br>
-          - Name (M.S.) — electrolyte/cathode interphase, additives<br>
-          - Name (M.S.) — Rietveld refinement, XAS, TEM
-        </p>
-      </div>
+  <!-- Student 1 -->
+  <a class="person-card" href="people/student-1.html">
+    <img class="person-photo" src="assets/images/people/student-1.jpg" alt="Student photo">
+    <div class="person-meta">
+      <div class="person-name">Myunghoon Kim</div>
+      <div class="person-role">Ph.D. Student</div>
+      <div class="person-tags">Ni-rich layered oxides · Rietveld refinement · XRD/XAS</div>
+    </div>
+  </a>
 
-      <div class="card span-6">
-        <h2>Alumni</h2>
-        <p>
-          - Name — Current position / company / institute<br>
-          - Name — Current position / company / institute
-        </p>
-      </div>
-    </section>
+  <!-- Student 2 -->
+  <a class="person-card" href="people/student-2.html">
+    <img class="person-photo" src="assets/images/people/student-2.jpg" alt="Student photo">
+    <div class="person-meta">
+      <div class="person-name">Name</div>
+      <div class="person-role">M.S. Student</div>
+      <div class="person-tags">Electrolyte additives · CEI · Cycling performance</div>
+    </div>
+  </a>
+</section>
   </main>
 
   <footer>
