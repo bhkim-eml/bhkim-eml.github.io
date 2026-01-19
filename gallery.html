@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lab | Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <span class="brand-badge" aria-hidden="true"></span>
+        <span>Energy Materials Lab</span>
+      </a>
+
+      <nav class="menu" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="people.html">People</a>
+        <a href="publication.html">Publication</a>
+        <a class="active" href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1 class="h-title">Gallery</h1>
+      <p class="h-sub">TEM/XRD/SEM figure, lab photo, 장비 사진 등을 모으는 섹션입니다. 이미지는 assets/images에 올리고 경로를 연결하면 됩니다.</p>
+    </section>
+
+    <section class="grid">
+      <div class="card span-4">
+        <h2>Figure 1</h2>
+        <p>예: Ni-rich layered cathode surface reconstruction (HRTEM).</p>
+      </div>
+
+      <div class="card span-4">
+        <h2>Figure 2</h2>
+        <p>예: Rietveld refinement (XRD) summary.</p>
+      </div>
+
+      <div class="card span-4">
+        <h2>Figure 3</h2>
+        <p>예: Electrochemistry (dQ/dV) or cycling performance.</p>
+      </div>
+
+      <div class="card span-12">
+        <h2>How to add images</h2>
+        <p>
+          1) 레포에 <code>assets/images</code> 폴더 만들기<br>
+          2) 이미지 업로드 (예: <code>assets/images/figure1.png</code>)<br>
+          3) 원하는 카드에 아래처럼 넣기:<br><br>
+          <code>&lt;img src="assets/images/figure1.png" alt="figure1" style="width:100%; border-radius:14px; border:1px solid rgba(255,255,255,.10);" /&gt;</code>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© <span id="y"></span> Energy Materials Lab.</div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
